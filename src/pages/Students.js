@@ -18,7 +18,7 @@ const AddNewStudent=()=>{
       <h3>Student Details</h3>
       <button className='butn' onClick={AddNewStudent}>Add New Student</button>
     </header>
-    <table>
+    <table className='table'>
       <thead>
         <tr>
           <td>Name</td>
