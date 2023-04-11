@@ -34,14 +34,14 @@ const AddNewStudents = () => {
     <>
     <div className='box'>
         <div className='header'>
-            <input type='text' name='Name' placeholder='Name'value={Name} onChange={(e)=>setName(e.target.value)}/>
-            <input type='text' name='Age' placeholder='Age'value={Age} onChange={(e)=>setAge(e.target.value)}/>
-            <input type='text' name='Course' placeholder='Course'value={Course} onChange={(e)=>setCourse(e.target.value)}/>
-            <input type='text' name='Batch' placeholder='Batch'value={Batch} onChange={(e)=>setBatch(e.target.value)}/>
+            <input type='text' name='Name' placeholder='Name'value={Name}  className='Name' onChange={(e)=>setName(e.target.value)}/>
+            <input type='text' name='Age' placeholder='Age'value={Age} className='Age' onChange={(e)=>setAge(e.target.value)}/>
+            <input type='text' name='Course' placeholder='Course'value={Course} className='Course'  onChange={(e)=>setCourse(e.target.value)}/>
+            <input type='text' name='Batch' placeholder='Batch'value={Batch} className='Batch' onChange={(e)=>setBatch(e.target.value)}/>
         </div>
     </div>
     <div className='box2'>
-        <button className='butn2' onClick={cancelAddStudent} style={{backgroundColor:'gray'}}>Cancel</button>
+        <button className='button' onClick={cancelAddStudent} style={{backgroundColor:'gray'}}>Cancel</button>
         <button className='butn2' onClick={SubmitNewStudent}>Submit</button>
     </div>
     </>
